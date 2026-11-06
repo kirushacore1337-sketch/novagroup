@@ -9,5 +9,5 @@ return [
 
     // Домены, с которых разрешены заявки. Пустой массив отключает проверку.
     // Пример: ['example.com', 'www.example.com']
-    'allowed_hosts' => [php -S localhost:8000],
+    'allowed_hosts' => [https://kirushacore1337-sketch.github.io/novagroup],
 ];
