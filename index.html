@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Group — агентство маркетинга и онлайн-школа от практиков</title>
+<meta name="description" content="Продвижение для бизнеса под ключ и онлайн-курсы маркетинга от практиков: SEO, таргет, контекст, SMM.">
+<meta property="og:title" content="Nova Group — агентство маркетинга и онлайн-школа">
+<meta property="og:description" content="Продвижение под ключ и курсы маркетинга от практиков. Небольшие живые потоки и путь к первой работе.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/og/og-image.jpg">
+<link rel="icon" href="img/logo/favicon.ico">
+<script>document.documentElement.classList.add("js");</script>
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/sections.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="js/main.js" defer></script>
+<script src="js/menu.js" defer></script>
+<script src="js/hero.js" defer></script>
+<script src="js/tabs.js" defer></script>
+<script src="js/modal.js" defer></script>
+<script src="js/form.js" defer></script>
+<script src="js/animations.js" defer></script>
+</head>
+<body>
+
+<!-- ===== ШАПКА ===== -->
+<header class="header" id="header">
+  <div class="container">
+    <a href="#hero" class="logo" aria-label="Nova Group — на главную">
+      <img src="img/logo/logo.svg" alt="" width="36" height="36">
+      <span>Nova Group</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <a href="#about">О нас</a>
+      <a href="#agency">Агентство</a>
+      <a href="#education">Обучение</a>
+      <a href="#roadmap">Вакансии</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header-cta">
+      <a class="btn btn-primary" href="#" data-open="modal-consult">Консультация</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Сделайте <span>первый шаг</span> в маркетинге</h1>
+      <p class="lead" style="margin-top:20px">Агентство для бизнеса и школа для тех, кто хочет войти в профессию. Всё делают практики, а не теоретики.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#" data-open="modal-consult">Получить консультацию</a>
+        <a class="btn btn-ghost" href="#about">Узнать больше</a>
+      </div>
+      <p class="hero-hint">Нажмите на иконку справа, чтобы увидеть подробности направления.</p>
+    </div>
+    <div>
+      <div class="orbit" role="group" aria-label="Направления компании">
+        <div class="orbit-center">Nova<br>Group</div>
+        <button class="orbit-btn" data-dir="agency" aria-pressed="false"><img src="img/hero/agency.svg" alt="" width="40" height="40">Агентство</button>
+        <button class="orbit-btn" data-dir="school" aria-pressed="false"><img src="img/hero/school.svg" alt="" width="40" height="40">Обучение</button>
+        <button class="orbit-btn" data-dir="jobs" aria-pressed="false"><img src="img/hero/jobs.svg" alt="" width="40" height="40">Вакансии</button>
+      </div>
+      <div class="orbit-panel" id="orbit-panel" aria-live="polite">
+        <h3>Единая экосистема</h3>
+        <p class="lead" style="font-size:1rem">Агентство, обучение и команда: три направления одного роста.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== О НАС ===== -->
+<section id="about" class="dark">
+  <div class="container">
+    <h2>Мы соединяем тех, кому нужен маркетинг, и тех, кто умеет его делать</h2>
+    <p class="lead">Бизнес получает продвижение, начинающие специалисты получают знания и путь к первой работе, а практики получают учеников и платформу для своих курсов. Практика питает обучение, обучение растит специалистов, а специалисты возвращаются в практику.</p>
+    <div class="principles">
+      <span class="tag">Практика важнее теории</span>
+      <span class="tag">Небольшие живые потоки</span>
+      <span class="tag">Честно о результатах</span>
+      <span class="tag">Всё в одном месте</span>
+    </div>
+    <h3 style="margin-top:56px">С чем вы к нам?</h3>
+    <div class="grid g4" style="margin-top:20px">
+      <a class="card card-link" href="#agency"><h3>Бизнесу</h3><p>Берём задачу под ключ: продвижение, реклама, сайты и брендинг.</p></a>
+      <a class="card card-link" href="#education"><h3>Тем, кто учится</h3><p>Живые курсы от практиков, закрытые группы и помощь в поиске работы.</p></a>
+      <a class="card card-link" href="#education" data-tab="teach"><h3>Практикам</h3><p>Свой курс на нашей платформе: оплату, продвижение и набор берём на себя.</p></a>
+      <a class="card card-link" href="#" data-open="modal-consult"><h3>Работа и специалисты</h3><p>Ищете работу или людей в команду? Оставьте заявку.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== АГЕНТСТВО ===== -->
+<section id="agency">
+  <div class="container">
+    <h2>Продвижение для бизнеса</h2>
+    <p class="lead">Берём задачу под ключ и подбираем каналы под вашу цель: от стратегии до запуска и отчётов.</p>
+    <div class="split" style="margin-top:36px">
+      <div>
+        <h3 style="margin-bottom:14px">Для кого</h3>
+        <ul class="check">
+          <li>Бизнесу, которому нужны клиенты и заявки</li>
+          <li>Экспертам и небольшим командам без своего маркетолога</li>
+          <li>Тем, у кого сайт или соцсети есть, а результата пока нет</li>
+        </ul>
+        <div class="btn-row"><a class="btn btn-primary" href="#" data-open="modal-consult">Обсудить проект</a></div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:14px">Форматы работы</h3>
+        <div class="principles" style="margin-top:0">
+          <span class="tag">Под ключ</span><span class="tag">Отдельная задача</span>
+          <span class="tag">Постоянное ведение</span><span class="tag">Консультация</span>
+        </div>
+      </div>
+    </div>
+    <div class="grid g4">
+      <article class="card"><div class="icon"><img src="img/agency/seo.svg" alt="" width="26" height="26"></div><h3>SEO и продвижение сайтов</h3><p>Видимость сайта в поиске и целевой трафик.</p></article>
+      <article class="card"><div class="icon"><img src="img/agency/ads.svg" alt="" width="26" height="26"></div><h3>Таргет и контекстная реклама</h3><p>Настройка, запуск и оптимизация платных каналов.</p></article>
+      <article class="card"><div class="icon"><img src="img/agency/smm.svg" alt="" width="26" height="26"></div><h3>SMM и контент</h3><p>Стратегия, контент и ведение соцсетей.</p></article>
+      <article class="card"><div class="icon"><img src="img/agency/web.svg" alt="" width="26" height="26"></div><h3>Сайты, дизайн и брендинг</h3><p>Сайты, дизайн и фирменный стиль.</p></article>
+    </div>
+    <ol class="steps">
+      <li>Заявка и бриф</li><li>Стратегия и план</li><li>Запуск и работа</li><li>Отчёты и рост</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== ОБУЧЕНИЕ ===== -->
+<section id="education" class="dark">
+  <div class="container">
+    <h2>Онлайн-обучение маркетингу</h2>
+    <p class="lead">Живые курсы от практикующих преподавателей: небольшие потоки, домашние задания и закрытая группа в Telegram.</p>
+    <div class="tabs" role="tablist" aria-label="Выбор направления">
+      <button class="tab" role="tab" id="tab-learn" aria-controls="panel-learn" aria-selected="true">Хочу обучаться</button>
+      <button class="tab" role="tab" id="tab-teach" aria-controls="panel-teach" aria-selected="false" tabindex="-1">Хочу обучать</button>
+    </div>
+
+    <div class="tab-panel" id="panel-learn" role="tabpanel" aria-labelledby="tab-learn">
+      <div class="split" style="margin-top:28px">
+        <div>
+          <h3 style="margin-bottom:14px">Для кого</h3>
+          <ul class="check">
+            <li>Новичкам, которые хотят войти в профессию</li>
+            <li>Начинающим специалистам, которым нужна практика</li>
+            <li>Тем, кто хочет прокачать конкретный канал: SEO, перформанс, SMM</li>
+          </ul>
+          <div class="btn-row"><a class="btn btn-lemon" href="#" data-open="modal-first">Узнать о наборе первыми</a></div>
+        </div>
+        <div>
+          <h3 style="margin-bottom:14px">Первые темы</h3>
+          <div class="principles" style="margin-top:0">
+            <span class="tag">SEO</span><span class="tag">Перформанс</span><span class="tag">SMM</span><span class="tag">Контент</span><span class="tag">ИИ (скоро)</span>
+          </div>
+          <h3 style="margin:28px 0 14px">Формат</h3>
+          <div class="principles" style="margin-top:0">
+            <span class="tag">Онлайн</span><span class="tag">Небольшие потоки</span><span class="tag">Домашние задания</span><span class="tag">Закрытая группа в Telegram</span>
+          </div>
+        </div>
+      </div>
+      <div class="grid g3">
+        <article class="card"><h3>Курсы от практиков</h3><p>Преподают специалисты, которые работают в профессии.</p></article>
+        <article class="card"><h3>Живой поток</h3><p>Онлайн-занятия, закрытая группа и обратная связь по заданиям.</p></article>
+        <article class="card"><h3>Помощь с карьерой</h3><p>Помогаем с резюме и выходом к работодателям.</p></article>
+      </div>
+      <ol class="steps">
+        <li>Выбираете курс</li><li>Записываетесь и оплачиваете</li><li>Учитесь в закрытой группе</li><li>Получаете обратную связь и помощь с карьерой</li>
+      </ol>
+    </div>
+
+    <div class="tab-panel" id="panel-teach" role="tabpanel" aria-labelledby="tab-teach" hidden>
+      <h3 style="margin-top:28px">Свой курс на нашей платформе</h3>
+      <p class="lead" style="margin-top:8px">Ведите курс на платформе: страницу, оплату, продвижение и набор группы мы берём на себя.</p>
+      <div class="grid g3">
+        <article class="card"><h3>Вы: курс и занятия</h3><p>Программа, живые занятия, работа с учениками.</p></article>
+        <article class="card"><h3>Мы: платформа и набор</h3><p>Страница курса, оплата, продвижение и набор группы.</p></article>
+        <article class="card"><h3>Оплата с продаж</h3><p>Вы получаете процент с продаж своего курса. Условия обсудим лично.</p></article>
+      </div>
+      <ol class="steps">
+        <li>Оставляете заявку</li><li>Созваниваемся и подписываем договор</li><li>Курс появляется в каталоге</li><li>Мы набираем группу, вы ведёте занятия</li>
+      </ol>
+      <div class="btn-row"><a class="btn btn-lemon" href="#" data-open="modal-consult">Стать преподавателем</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== СВЯЗЬ АГЕНТСТВА И ШКОЛЫ ===== -->
+<section id="connection">
+  <div class="container">
+    <h2>Агентство и школа усиливают друг друга</h2>
+    <p class="lead">Практика попадает в обучение, а ученики получают доступ к практике. Часть связей уже работает, остальные мы выстраиваем вместе с первыми потоками.</p>
+    <div class="grid g2">
+      <article class="card"><h3>Преподают практики</h3><p>Курсы ведут специалисты, которые каждый день работают с реальными проектами и знают, что сейчас работает на рынке.</p></article>
+      <article class="card"><h3>Стажировка на реальных проектах</h3><p>Ученики практикуются на настоящих задачах агентства под присмотром наставников, а не только на учебных заданиях.</p></article>
+      <article class="card"><h3>Найм выпускников</h3><p>Лучшие выпускники могут получить работу или подработку в агентстве.</p></article>
+      <article class="card"><h3>Проекты учеников</h3><p>Ученики и выпускники со своим бизнесом могут заказать продвижение в агентстве.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ДОРОЖНАЯ КАРТА ===== -->
+<section id="roadmap" class="dark">
+  <div class="container">
+    <h2>Что есть сейчас и что дальше</h2>
+    <div class="road">
+      <div><h3>Сейчас</h3><ul>
+        <li>Агентство: приём проектов</li><li>Консультации по карьере и продвижению</li><li>Приём заявок от преподавателей</li></ul></div>
+      <div><h3>Скоро</h3><ul>
+        <li>Первые курсы в живых потоках</li><li>Каталог курсов и онлайн-оплата</li><li>Закрытые группы потоков в Telegram</li></ul></div>
+      <div><h3>Дальше</h3><ul>
+        <li>Раздел для работодателей и вакансии</li><li>Платформа с личными кабинетами</li><li>Новые темы курсов и преподаватели</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ФИНАЛЬНЫЙ CTA ===== -->
+<section class="cta" id="cta">
+  <div class="container">
+    <h2>Не знаете, с чего начать?</h2>
+    <p class="lead">Расскажите о задаче или цели, и мы подскажем, подойдёт ли вам курс или нужна работа агентства.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="#" data-open="modal-consult">Получить консультацию</a>
+      <a class="btn btn-ghost" href="#" data-open="modal-first">Узнать первыми</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== КОНТАКТЫ / ФУТЕР ===== -->
+<footer class="footer" id="contacts">
+  <div class="container">
+    <div>
+      <a href="#hero" class="logo" style="color:#fff;margin-bottom:12px"><img src="img/logo/logo-white.svg" alt="" width="36" height="36"><span>Nova Group</span></a>
+      <p>Агентство маркетинга и онлайн-школа от практиков.</p>
+    </div>
+    <div>
+      <h3>Связаться</h3>
+      <ul>
+        <li><a href="https://t.me/your_username" target="_blank" rel="noopener">Telegram</a></li>
+        <li><a href="https://wa.me/70000000000" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Документы</h3>
+      <ul>
+        <li><a href="docs/oferta.html">Договор-оферта</a></li>
+        <li><a href="docs/privacy.html">Политика конфиденциальности</a></li>
+      </ul>
+    </div>
+    <p class="copy">© <span id="year">2026</span> Nova Group. Все права защищены.</p>
+  </div>
+</footer>
+
+<!-- ===== МОДАЛЬНЫЕ ОКНА ===== -->
+<dialog id="modal-consult" aria-labelledby="mc-title">
+  <form class="modal" method="dialog" data-form data-type="consult" novalidate>
+    <button type="button" class="close" data-close aria-label="Закрыть">&times;</button>
+    <h2 id="mc-title">Получить консультацию</h2>
+    <p>Оставьте имя и Telegram. Мы свяжемся и подскажем направление и курс.</p>
+    <label class="field"><span>Имя</span><input type="text" name="name" autocomplete="given-name" required></label>
+    <label class="field"><span>Telegram</span><input type="text" name="tg" placeholder="@username" required></label>
+    <label class="agree"><input type="checkbox" name="agree" required><span>Я согласен(на) на <a href="docs/privacy.html" target="_blank">обработку персональных данных</a></span></label>
+    <button class="btn btn-primary" type="submit">Отправить заявку</button>
+    <div class="status" role="status"></div>
+  </form>
+</dialog>
+
+<dialog id="modal-first" aria-labelledby="mf-title">
+  <form class="modal" method="dialog" data-form data-type="first" novalidate>
+    <button type="button" class="close" data-close aria-label="Закрыть">&times;</button>
+    <h2 id="mf-title">Узнать первыми</h2>
+    <p>Мы готовим открытые уроки и полезные материалы. Оставьте имя и Telegram, и мы сообщим о запуске.</p>
+    <label class="field"><span>Имя</span><input type="text" name="name" autocomplete="given-name" required></label>
+    <label class="field"><span>Telegram</span><input type="text" name="tg" placeholder="@username" required></label>
+    <label class="agree"><input type="checkbox" name="agree" required><span>Я согласен(на) на <a href="docs/privacy.html" target="_blank">обработку персональных данных</a></span></label>
+    <button class="btn btn-primary" type="submit">Сообщить мне</button>
+    <div class="status" role="status"></div>
+  </form>
+</dialog>
+
+</body>
+</html>

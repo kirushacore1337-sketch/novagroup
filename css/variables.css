@@ -1,0 +1,11 @@
+/* variables.css — Переменные: шрифт, цвета, размеры. Меняй здесь, чтобы перекрасить сайт */
+
+/* Шрифт: положи файл в fonts/ (woff2), иначе сработает системный */
+@font-face{font-family:"Manrope";src:url("../fonts/Manrope-Variable.woff2") format("woff2");font-weight:200 800;font-display:swap}
+
+:root{
+  --ink:#101c2c; --ink-2:#1b2a40; --chalk:#f3f6f8; --white:#fff;
+  --cobalt:#2f4bff; --lemon:#e8f25c; --muted:#5d6b7e; --line:#d9e0e8;
+  --font:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --r:20px; --max:1180px; --pad:clamp(16px,4vw,32px); --gap:clamp(56px,9vw,112px);
+}
