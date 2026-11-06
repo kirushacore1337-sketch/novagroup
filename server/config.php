@@ -9,5 +9,4 @@ return [
 
     // Домены, с которых разрешены заявки. Пустой массив отключает проверку.
     // Пример: ['example.com', 'www.example.com']
-    'allowed_hosts' => [https://kirushacore1337-sketch.github.io/novagroup],
-];
+    'allowed_hosts' => [https://kirushacore1337-sketch.github.io/novagroup];
