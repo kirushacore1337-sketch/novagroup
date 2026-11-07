@@ -1,0 +1,35 @@
+/* layout.css — Каркас: контейнер, секции, шапка, призыв к действию и футер */
+
+.container{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:var(--pad)}
+section{padding-block:var(--gap)}
+/* Шапка */
+.header{position:sticky;top:0;z-index:50;background:rgba(243,246,248,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.header .container{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.25rem}
+.logo img{width:36px;height:36px}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a{font-weight:600;font-size:.98rem;color:var(--ink-2)}
+.nav a:hover{color:var(--cobalt)}
+.header-cta{display:flex;align-items:center;gap:12px}
+.header-cta .btn{min-height:42px;padding:8px 20px}
+.burger{display:none;width:44px;height:44px;border:0;background:none;cursor:pointer;position:relative}
+.burger span,.burger::before,.burger::after{content:"";position:absolute;left:10px;right:10px;height:2px;background:var(--ink);border-radius:2px;transition:.25s}
+.burger::before{top:15px}.burger span{top:21px}.burger::after{top:27px}
+.burger[aria-expanded="true"]::before{top:21px;transform:rotate(45deg)}
+.burger[aria-expanded="true"] span{opacity:0}
+.burger[aria-expanded="true"]::after{top:21px;transform:rotate(-45deg)}
+
+/* CTA и футер */
+.cta{text-align:center}
+.cta .lead{margin-inline:auto}
+.cta .btn-row{justify-content:center}
+.footer{background:var(--ink);color:#b8c4d4;padding-block:48px;font-size:.95rem}
+.footer .container{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:32px}
+.footer h3{color:#fff;font-size:1rem;margin-bottom:12px}
+.footer li{margin-bottom:8px}
+.footer a:hover{color:var(--lemon)}
+.copy{grid-column:1/-1;padding-top:24px;border-top:1px solid #2b3d58;font-size:.88rem}
+
+/* Тень шапки после прокрутки (menu.js) */
+.header{transition:box-shadow .25s}
+.header.is-scrolled{box-shadow:0 6px 24px rgba(16,28,44,.08)}
