@@ -3,7 +3,9 @@
   "use strict";
   const { $, $$ } = App;
 
-  const ENDPOINT = "server/send.php"; // адрес обработчика заявок
+  // Адрес Cloudflare Worker (для GitHub Pages). Пусто = использовать PHP: server/send.php
+  const WORKER_URL = "";
+  const ENDPOINT = WORKER_URL || "server/send.php";
   const TG_RE = /^@?[A-Za-z0-9_]{4,32}$/;
 
   $$("[data-form]").forEach((form) => {
