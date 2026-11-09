@@ -1,0 +1,7 @@
+/* reset.css — Сброс стилей браузера */
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button,input{font:inherit;color:inherit}
