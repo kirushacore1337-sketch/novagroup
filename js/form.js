@@ -49,8 +49,8 @@
         show("Не удалось отправить. Напишите нам в Telegram напрямую.", "err");
       } finally {
         submit.disabled = false;
+        const WORKER_URL = "https://novagroup-form.kirushacore-1337.workers.dev";
       }
-      const WORKER_URL = "https://novagroup-form.kirushacore-1337.workers.dev";
     });
   });
 })();
