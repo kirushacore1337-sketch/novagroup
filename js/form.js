@@ -4,7 +4,7 @@
   const { $, $$ } = App;
 
   // Адрес Cloudflare Worker (для GitHub Pages). Пусто = использовать PHP: server/send.php
-  const WORKER_URL = "";
+  const WORKER_URL = "https://novagroup-form.kirushacore-1337.workers.dev";
   const ENDPOINT = WORKER_URL || "server/send.php";
   const TG_RE = /^@?[A-Za-z0-9_]{4,32}$/;
 
@@ -49,7 +49,6 @@
         show("Не удалось отправить. Напишите нам в Telegram напрямую.", "err");
       } finally {
         submit.disabled = false;
-        const WORKER_URL = "https://novagroup-form.kirushacore-1337.workers.dev";
       }
     });
   });
