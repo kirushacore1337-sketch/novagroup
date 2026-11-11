@@ -50,7 +50,7 @@
       } finally {
         submit.disabled = false;
       }
-      const WORKER_URL = "https://novagroup-form.твой-поддомен.workers.dev";
+      const WORKER_URL = "https://novagroup-form.kirushacore-1337.workers.dev";
     });
   });
 })();
