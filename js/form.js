@@ -50,6 +50,7 @@
       } finally {
         submit.disabled = false;
       }
+      const WORKER_URL = "https://novagroup-form.твой-поддомен.workers.dev";
     });
   });
 })();
